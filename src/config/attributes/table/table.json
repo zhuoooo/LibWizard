@@ -1,0 +1,127 @@
+{
+	"a-table/bordered": {
+		"description": "Whether to show all table borders",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-table/childrenColumnName": {
+		"description": "The column contains children to display",
+		"optionType": "string[]",
+		"defaultValue": "children"
+	},
+	"a-table/columns": {
+		"description": "Columns of table",
+		"optionType": "array",
+		"defaultValue": "-"
+	},
+	"a-table/components": {
+		"description": "Override default table elements",
+		"optionType": "object",
+		"defaultValue": "-"
+	},
+	"a-table/dataSource": {
+		"description": "Data record array to be displayed",
+		"optionType": "any[]",
+		"defaultValue": "-"
+	},
+	"a-table/defaultExpandAllRows": {
+		"description": "Expand all rows initially",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-table/defaultExpandedRowKeys": {
+		"description": "Initial expanded row keys",
+		"optionType": "string[]",
+		"defaultValue": "-"
+	},
+	"a-table/expandedRowKeys": {
+		"description": "Current expanded row keys",
+		"optionType": "string[]",
+		"defaultValue": "-"
+	},
+	"a-table/expandedRowRender": {
+		"description": "Expanded container render for each row",
+		"optionType": "Function(record, index, indent, expanded):VNode|slot-scope",
+		"defaultValue": "-"
+	},
+	"a-table/expandIcon": {
+		"description": "Customize row expand Icon.",
+		"optionType": "Function(props):VNode | slot=\"expandIcon\" slot-scope=\"props\"",
+		"defaultValue": "-"
+	},
+	"a-table/expandRowByClick": {
+		"description": "Whether to expand row by clicking anywhere in the whole row",
+		"optionType": "boolean",
+		"defaultValue": "false"
+	},
+	"a-table/footer": {
+		"description": "Table footer renderer",
+		"optionType": "Function(currentPageData)|slot-scope",
+		"defaultValue": ""
+	},
+	"a-table/indentSize": {
+		"description": "Indent size in pixels of tree data",
+		"optionType": "number",
+		"defaultValue": "15"
+	},
+	"a-table/loading": {
+		"description": "Loading status of table",
+		"optionType": "boolean|object",
+		"defaultValue": "false"
+	},
+	"a-table/locale": {
+		"description": "i18n text including filter, sort, empty text, etc",
+		"optionType": "object",
+		"defaultValue": "filterConfirm: 'Ok' \nfilterReset: 'Reset' \nemptyText: 'No Data'\n\n"
+	},
+	"a-table/pagination": {
+		"description": "Pagination config or [Pagination] (/ant-design-vue/components/pagination/), hide it by setting it to false",
+		"optionType": "object",
+		"defaultValue": ""
+	},
+	"a-table/rowClassName": {
+		"description": "Row's className",
+		"optionType": "Function(record, index):string",
+		"defaultValue": "-"
+	},
+	"a-table/rowKey": {
+		"description": "Row's unique key, could be a string or function that returns a string",
+		"optionType": "string|Function(record):string",
+		"defaultValue": "key"
+	},
+	"a-table/rowSelection": {
+		"description": "Row selection config",
+		"optionType": "object",
+		"defaultValue": "null"
+	},
+	"a-table/scroll": {
+		"description": "Set horizontal or vertical scrolling, can also be used to specify the width and height of the scroll area. It is recommended to set a number for x, if you want to set it to true, you need to add style .ant-table td { white-space: nowrap; }.",
+		"optionType": "{ x: number | true, y: number }",
+		"defaultValue": "-"
+	},
+	"a-table/showHeader": {
+		"description": "Whether to show table header",
+		"optionType": "boolean",
+		"defaultValue": "true"
+	},
+	"a-table/size": {
+		"description": "Size of table",
+		"optionType": "default | middle | small",
+		"defaultValue": "default"
+	},
+	"a-table/title": {
+		"description": "Table title renderer",
+		"optionType": "Function(currentPageData)|slot-scope",
+		"defaultValue": ""
+	},
+	"a-table/customHeaderRow": {
+		"description": "Set props on per header row",
+		"optionType": "Function(column, index)",
+		"defaultValue": "-"
+	},
+	"a-table/customRow": {
+		"description": "Set props on per row",
+		"optionType": "Function(record, index)",
+		"defaultValue": "-"
+	}
+}
